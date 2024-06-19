@@ -2,17 +2,18 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - prints numbers from 0 to 10
+ * main - prints numbers with single-digit numbers
  * Return: 0
  */
 int main(void)
 {
-        int numbers;
+	int numbers;
 
-        for (numbers = 0; numbers < 10; numbers++)
-        {
-                printf("%d", numbers);
-        }
-        putchar('\n');
-        return (0);
+	for (numbers = 0; numbers < 10; numbers++)
+	{
+		putchar(numbers + '0');
+		putchar(',');
+}
+putchar('\n');
+return (0);
 }
