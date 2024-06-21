@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * jack_bauer - starting from 00:00 to 23:59.
  * @hout @minute @time0 @time1 @time2 @time3 @time4 - :charactere checked
