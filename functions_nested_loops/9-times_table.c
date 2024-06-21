@@ -15,7 +15,7 @@ for (num1 = 0; num1 <= 9; num1++)
 {
 	for (num2 = 0; num2 <= 9; num2++)
 	{
-		result = num1 * num2
+		result = num1 * num2;
 			if (result > 9)
 			{
 				final1 = result % 10;
