@@ -19,12 +19,12 @@ void jack_bauer(void)
 		time2 = ':';
 		time3 = minute / 10 + '0';
 		time4 = minute % 10 + '0';
-		putchar(time0);
-		putchar(time1);
-		putchar(time2);
-		putchar(time3);
-		putchar(time4);
-			putchar('\n');
+		_putchar(time0);
+		_putchar(time1);
+		_putchar(time2);
+		_putchar(time3);
+		_putchar(time4);
+			_putchar('\n');
 	}
 
 	}
