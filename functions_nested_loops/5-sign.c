@@ -18,7 +18,8 @@ int print_sign(int n)
 	}
 
 	else
-{²
+{
 	_putchar('-');
 	return (-1);
+}
 }
