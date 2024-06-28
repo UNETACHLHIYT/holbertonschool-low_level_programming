@@ -2,14 +2,14 @@
 #include <stdio.h>
 
 /**
- * my_strncpy -  copies a string
+ * _strncpy -  copies a string
  * @dest: tmp
  * @src: string
  * @n: variable
  *
  * Return: Always 0.
  */
-char *my_strncpy(char *dest, const char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
 	int cpo;
 
