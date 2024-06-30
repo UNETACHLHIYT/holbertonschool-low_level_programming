@@ -8,22 +8,22 @@
  * Return: Always 0.
  */
 char *leet(char *str)
-
 {
-	int p;
+	int i, j;
+    char letters[] = "aAeEoOtTlL";
+    char leet_chars[] = "4433007711";
 
-	for (p = 0; str[p] != '\0'; p++)
-{
-	if (str[p] == 'a' || str[p] == 'A')
-		str[p] = '4';
-	if (str[p] == 'e' || str[p] == 'E')
-		str[p] = '3';
-	if (str[p] == 'o' || str[p] == 'O')
-		str[p] = '0';
-	if (str[p] == 't' || str[p] == 'T')
-		str[p] = '7';
-	if (str[p] == 'l' || str[p] == 'L')
-		str[p] = '1';
-}
-return (str);
+    for (i = 0; str[i] != '\0'; i++)
+    {
+        for (j = 0; j < 10; j++)
+        {
+            if (str[i] == letters[j])
+            {
+                str[i] = leet_chars[j];
+                break;
+            }
+        }
+    }
+
+    return str;
 }
