@@ -9,19 +9,20 @@
  * Return: Always 0.
  */
 char *_strpbrk(char *s, char *accept)
-{
-	while (*s)
-{
-	char *a = accept;
 
-	while (*a)
 {
-	if (*s == *a)
+	int i;
+	int j;
+
+	for (i = 0; s[i] != '\0'; i++)
 {
-	return (s);
+	for (j = 0; accept[j] != '\0'; j++)
+{
+	if (s[i] == accept[j])
+{
+	return (&s[i]);
 }
-a++;
-s++;
+}
 }
 return (NULL);
 }
