@@ -40,7 +40,7 @@ if (vst == n)
 {
 return (vcar);
 {
-else if (vst > n)
+if (vst > n)
 {
 return (_sqrt_recursionbis(n, dep, vcar - 1));
 }
@@ -50,5 +50,6 @@ return (_sqrt_recursionbis(n, vcar + 1, fin));
 }
 }
 }
+return (-1);
 }
 
